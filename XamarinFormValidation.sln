@@ -1,0 +1,31 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "XamarinFormValidation.Shared", "XamarinFormValidation.Shared\XamarinFormValidation.Shared.shproj", "{53D4B83D-10CA-416A-A869-4B47E4F43EC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinFormValidation.iOS", "XamarinFormValidation.iOS\XamarinFormValidation.iOS.csproj", "{84EA16A3-465C-4F34-9F0E-B13A817E9F43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinFormValidation.Android", "XamarinFormValidation.Android\XamarinFormValidation.Android.csproj", "{3BD23769-473D-4F39-9F9F-A4FFD9F159BA}"
+EndProject
+Project("{5DD5E4FA-CB73-4610-85AB-557B54E96AA9}") = "XamarinFormValidation.NuGet", "XamarinFormValidation.NuGet\XamarinFormValidation.NuGet.nuproj", "{47DE56AE-C0C8-4074-AB5C-8C5CDA1CB695}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84EA16A3-465C-4F34-9F0E-B13A817E9F43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84EA16A3-465C-4F34-9F0E-B13A817E9F43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84EA16A3-465C-4F34-9F0E-B13A817E9F43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84EA16A3-465C-4F34-9F0E-B13A817E9F43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BD23769-473D-4F39-9F9F-A4FFD9F159BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BD23769-473D-4F39-9F9F-A4FFD9F159BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BD23769-473D-4F39-9F9F-A4FFD9F159BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BD23769-473D-4F39-9F9F-A4FFD9F159BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47DE56AE-C0C8-4074-AB5C-8C5CDA1CB695}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47DE56AE-C0C8-4074-AB5C-8C5CDA1CB695}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47DE56AE-C0C8-4074-AB5C-8C5CDA1CB695}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47DE56AE-C0C8-4074-AB5C-8C5CDA1CB695}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
