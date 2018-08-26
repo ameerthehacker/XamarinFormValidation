@@ -13,9 +13,12 @@
     <Compile Include="$(MSBuildThisFileDirectory)Validators\Contracts\IValidator.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Validators\Implementations\FormatValidator.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Validators\Implementations\RequiredValidator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Validators\Implementations\BasicErrorStyle.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Effects\BorderColorEffect.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Validators\" />
     <Folder Include="$(MSBuildThisFileDirectory)Validators\Contracts\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Effects\" />
   </ItemGroup>
 </Project>

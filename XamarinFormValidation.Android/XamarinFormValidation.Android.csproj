@@ -106,9 +106,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Effects\BorderColorEffect.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Effects\" />
   </ItemGroup>
   <Import Project="..\XamarinFormValidation.Shared\XamarinFormValidation.Shared.projitems" Label="Shared" Condition="Exists('..\XamarinFormValidation.Shared\XamarinFormValidation.Shared.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
