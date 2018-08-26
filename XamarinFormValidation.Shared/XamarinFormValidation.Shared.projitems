@@ -9,6 +9,11 @@
     <Import_RootNamespace>XamarinFormValidation</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)MyClass.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Validators\Contracts\IErrorStyle.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Validators\Contracts\IValidator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Validators\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Validators\Contracts\" />
   </ItemGroup>
 </Project>
