@@ -11,6 +11,8 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Validators\Contracts\IErrorStyle.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Validators\Contracts\IValidator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Validators\Implementations\FormatValidator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Validators\Implementations\RequiredValidator.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Validators\" />
