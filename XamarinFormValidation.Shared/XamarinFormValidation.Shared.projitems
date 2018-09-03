@@ -14,7 +14,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)Validators\Implementations\FormatValidator.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Validators\Implementations\RequiredValidator.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Validators\Implementations\BasicErrorStyle.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Effects\BorderColorEffect.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Effects\BorderEffect.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Behaviors\ValidationBehavior.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Behaviors\ValidationGroupBehaviour.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Validators\" />

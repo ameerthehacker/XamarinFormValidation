@@ -1,7 +1,7 @@
 ﻿using System;
-using Android.Graphics;
-using Android.Graphics.Drawables;
+using global::Android.Graphics;
 using Xamarin.Forms;
+using XamarinFormValidation.Effects;
 using Xamarin.Forms.Platform.Android;
 using XamarinFormValidation.Android.Effects;
 
@@ -11,7 +11,7 @@ namespace XamarinFormValidation.Android.Effects
 {
     public class BorderColorEffect : PlatformEffect
     {
-        public Drawable oldBackground;
+        public ColorFilter oldBackgroundColor;
 
         protected override void OnAttached()
         {
@@ -19,9 +19,9 @@ namespace XamarinFormValidation.Android.Effects
             {
                 try
                 {
-                    oldBackground = Control.Background;
+                    oldBackgroundColor = Control.Background.ColorFilter;
                     Control.Background.SetColorFilter(
-                        XamarinFormValidation.Effects.BorderEffect.GetBorderColor(Element).ToAndroid(), 
+                        BorderEffect.GetBorderColor(Element).ToAndroid(), 
                         PorterDuff.Mode.SrcIn
                     );
                 }
@@ -36,7 +36,7 @@ namespace XamarinFormValidation.Android.Effects
         {
             try
             {
-                Control.Background = oldBackground;
+                Control.Background.SetColorFilter(oldBackgroundColor);
             }
             catch (Exception e)
             {

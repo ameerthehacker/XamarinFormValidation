@@ -1,20 +1,21 @@
-﻿using Android.Graphics.Drawables;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 namespace XamarinFormValidation.Effects
 {
     public static class BorderEffect {
-        public static readonly BindableProperty HasBorderEffectProperty = BindableProperty.Create(
+        public static readonly BindableProperty HasBorderEffectProperty = BindableProperty.CreateAttached(
             "HasBorderEffect",
             typeof(bool),
             typeof(BorderEffect),
+            false,
             propertyChanged: OnHasBorderEffectChanged
         );
 
-        public static readonly BindableProperty BorderColorProperty = BindableProperty.Create(
+        public static readonly BindableProperty BorderColorProperty = BindableProperty.CreateAttached(
             "BorderColor",
             typeof(Color),
-            typeof(BorderEffect)
+            typeof(BorderEffect),
+            Color.Default
         );
 
         public static bool GetHasBorderEffect(BindableObject view) {
@@ -39,12 +40,13 @@ namespace XamarinFormValidation.Effects
         public static void OnHasBorderEffectChanged(BindableObject bindable, object oldValue, object newValue) {
             View view = bindable as View;
             if((bool)newValue) {
-                (view as View).Effects.Add(new ViewBorderColorEffect());
+                view.Effects.Add(new ViewBorderColorEffect());
             }
             else {
-                foreach(Effect effect in view.Effects) {
-                    if(effect is ViewBorderColorEffect) {
-                        view.Effects.Remove(effect);
+                for (int i = 0; i < view.Effects.Count; i++) {
+                    if(view.Effects[i] is ViewBorderColorEffect) {
+                        view.Effects.RemoveAt(i);
+                        break;
                     }
                 }
             }
